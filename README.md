@@ -4,6 +4,7 @@
 - [Google Python 风格指南](https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/)
 
 - 常用 Linux 命令的基本使用
+
     | 序号 | 命令 | 对应英文 | 作用 |
     |:----:|:----:|:----:|:----:|
     | 01 | ls | list | 查看当前文件夹下的内容 |
