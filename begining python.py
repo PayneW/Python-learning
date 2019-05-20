@@ -17,5 +17,9 @@ aList = []
 aList.append("a")
 aList.append("b")
 aList.append("c")
+
 # ['a', 'b', 'c']
 print(aList)
+
+# Python 之禅
+import this

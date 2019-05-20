@@ -1,5 +1,5 @@
 ## Learning-Python
- Python 学习仓库
+ Python 学习
 
 - [Google Python 风格指南](https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/)
 
@@ -24,8 +24,20 @@
 
 
 
+- Python 注释: 
+    + """docstring 文档注释"""
+    + ``` # 单行注释 ```
+
+## [一文看懂 Python 面向对象编程 (Python 学习与新手入门必看)](https://mp.weixin.qq.com/s?__biz=MjM5OTMyODA4Nw==&mid=2247483689&idx=1&sn=3c6e345f0dc083450a034a292abcdcba&chksm=a73c6111904be8070fda0c5e64f9263193936aa9e80da13f0f8d77ad6559b431b4d576c0095c&scene=21#wechat_redirect)
+
+
+
+
+
 - 人类的大脑是如何学习到知识的？答案是通过不断的思考。在不断地学习和思考的过程中，人的大脑内部产生着剧烈的神经活动，迫使脑神经之间建立了更多的连接。随着神经元之间连接越来越多，我们对问题的认识也就越来越深刻，遇到类似问题反应也会越来越快。不仅如此，甚至还能触类旁通，举一反三，乃至和其他的领域结合，产生创新性的想法。这表现出来，就是你更聪明了。
     + [作者：liuyubobobo](https://www.imooc.com/article/44792)
+
+
 
 
 ## Python Philosophy（Python哲学）翻译及简析
