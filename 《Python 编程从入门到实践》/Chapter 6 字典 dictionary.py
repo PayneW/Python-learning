@@ -12,7 +12,20 @@
 '''
 
 
-# 6.2.6 由类对象组成的字典
+''' 6.2.3 创建一个空字典  '''
+alien_0 = dict()
+alien_0['color'] = 'green'
+alien_0['points'] = 5
+# alien_0 dictionary: {'color': 'green', 'points': 5}
+print("alien_0 dictionary:", alien_0)
+
+''' 6.2.5 删除键值对 '''
+del alien_0['points']
+# {'color': 'green'}
+print(alien_0)
+
+
+''' 6.2.6 由类对象组成的字典 '''
 favorite_languages = {
     'jen': 'python',
     'sarah': 'C',
@@ -32,14 +45,15 @@ for name in favorite_languages.keys():
               favorite_languages[name].title() + "!\n")
 
 
-# 6.3 遍历字典
-# 6.3.1 遍历字典中所有的键-值对: 字典.items()
-# 6.3.2 遍历字典中所有的键: 字典.keys()
-# 6.3.2 遍历字典中所有的值: 字典.values()
+'''
+    - 6.3 遍历字典
+        + 6.3.1 遍历字典中所有的键-值对: 字典.items()
+        + 6.3.2 遍历字典中所有的键: 字典.keys()
+        + 6.3.2 遍历字典中所有的值: 字典.values()
+'''
 
 
-
-# 6.4.1 字典列表
+''' 6.4.1 字典列表 '''
 # 创建一个用于存储外星人的空列表
 aliens = []
 # 创建 30 个绿色的外星人
@@ -56,7 +70,7 @@ print('...')
 print('Total number of aliens: ' + str(len(aliens)))
 
 
-# 6.4.2 在字典中存储列表
+''' 6.4.2 在字典中存储列表 '''
 fav_languages = {
     'jen': ['python', 'ruby'],
     'sarah': ['c'],
@@ -69,7 +83,8 @@ for name, languages in fav_languages.items():
         print('\t' + language.title())
 print("\n")
 
-# 6.4.3 在字典中存储字典
+
+''' 6.4.3 在字典中存储字典 '''
 users = {
     'a_einstein': {
         'first': 'albert',
