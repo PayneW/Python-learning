@@ -1,5 +1,14 @@
-## Learning-Python
+# Learning-Python
  Python 学习
+
+ 
+## 在编程概念种，表达式和语句的区别？ 
+- 答: 表达式 (expression) 是被求值的代码，而 语句 (statement) 是一段可执行代码。<br/>
+     因为表达式可以被求值，所以它可写再赋值语句等号的右侧。而语句不一定有值，像 import/for/
+     break 等语句就不能被用于赋值。<br/>
+     表达式本身可以作为表达式语句，也能作为赋值语句的右值或 if 语句的条件等，所以表达式可以作为
+     语句的组成部分，但不是必须成分 (e.g.: continue 语句)
+
 
 - [Google Python 风格指南](https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/)
 

@@ -26,13 +26,21 @@ PASSWORD = '123456'
 
 
 ''' 使用 snippets (没找到 PyCharm 中使用的教程)'''
-a = 34
-if a == 20:
+num_34 = 34
+if num_34 == 20:
     ''' pass 空语句/占位语句 '''
     pass
-elif a == 30:
-    pass
+
+
+print("Please enter a number:")
+a = input()
+a = int(a)
+print(type(a))
+if a == 1:
+    print("apple")
+elif a == 2:
+    print("orange")
+elif a == 3:
+    print("banana")
 else:
-    print("Yes, a is 34")
-
-
+    print("shopping")
