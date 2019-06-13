@@ -52,10 +52,12 @@ print(' ')
 
 
 '''
-    - 4.3.4 列表解析: 使用列表解析重写上面 squares.py (tips: 列表解析可以看作是 for 循环语句的简写形式)
+    - 4.3.4 列表解析: 使用列表解析重写上面 squares.py (tips: 列表解析可以看作是 for 循环
+        语句的简写形式)
         - (1) anther_squares 为列表名
         - (2) value ** 2 表达式计算平方值
-        - (3) for value in range(1, 11): for 循环用于给表达式提供值，注意此处 for 循环末尾无冒号
+        - (3) for value in range(1, 11): for 循环用于给表达式提供值，注意此处 for 
+            循环末尾无冒号
 '''
 another_squares = [value ** 2 for value in range(1, 11)]
 # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]

@@ -1,3 +1,7 @@
+'''
+    6: 表达式 : 表达式(Expression) 是 运算符(operator) 和 操作数(operand) 所构成的序列。
+'''
+
 
 a = 1
 b = 2
@@ -32,15 +36,18 @@ if num_34 == 20:
     pass
 
 
-print("Please enter a number:")
-a = input()
-a = int(a)
-print(type(a))
-if a == 1:
-    print("apple")
-elif a == 2:
-    print("orange")
-elif a == 3:
-    print("banana")
-else:
-    print("shopping")
+# print("Please enter a number:")
+# a = input()
+# a = int(a)
+# print(type(a))
+# if a == 1:
+#     print("apple")
+# elif a == 2:
+#     print("orange")
+# elif a == 3:
+#     print("banana")
+# else:
+#     print("shopping")
+
+
+# ********************* over *****************

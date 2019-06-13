@@ -53,5 +53,15 @@ class ElectricCar(Car):
     """模拟电动汽车的独特之处"""
     def __init__(self, make, model, year):
         """初始化父类的属性，再初始化电动汽车特有的属性"""
-        super().__init__(make, model, year)
+        super().__init__(make, model, year)    # (4)
         self.battery = Battery()
+
+
+"""
+    - 注解: 
+        + (4)处的 super（） 是一个特殊函数，帮助 Python 将父类和子类关联起来。这行代码让 
+            Python 调用 ElectricCar 的父类的方法 __int__(), 让 ElectricCar 实例包含
+            父类的所有属性。 父类也称为 **超类 (superclass)**, 名称 super 因此而得名。 
+"""
+
+
