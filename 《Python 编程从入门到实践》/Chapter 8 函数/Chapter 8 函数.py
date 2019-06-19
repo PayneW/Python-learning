@@ -73,7 +73,7 @@ def get_formatted_name(first_name, last_name, middle_name=''):
 
 
 # - **musician /mjuː'zɪʃ(ə)n/ n.音乐家**
-# Do you guys know any musicians? 你们俩有认识玩音乐的人吗？
+#   + Do you guys know any musicians? 你们俩有认识玩音乐的人吗？
 musician = get_formatted_name('jimi', 'hendrix')
 print(musician)  # Jimi
 
@@ -85,13 +85,12 @@ print(musician + '\n')
 # 8.3.3 返回字典
 def build_person(first_name, last_name):
     """返回一个字典，其中包含有关一个人的信息"""
-    person = {'first': first_name, 'last_name': last_name}
-    return person
+    return {'first': first_name, 'last_name': last_name}
 
 
 musician = build_person('jimi', 'hendrix')
 # {'first': 'jimi', 'last_name': 'hendrix'}
-print(musician)
+print(str(musician) + '\n')
 print(" ")
 
 
