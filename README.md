@@ -45,8 +45,46 @@
 .com/s?__biz=MjM5OTMyODA4Nw==&mid=2247483689&idx=1&sn=3c6e345f0dc083450a034a292abcdcba&chksm=a73c6111904be8070fda0c5e64f9263193936aa9e80da13f0f8d77ad6559b431b4d576c0095c&scene=21#wechat_redirect)
 
 ### Python 命名规范
- - constant 常量命名      
-    ```python
-        ACCOUNT = 'qiyue'    
-        PASSWORD = '123456'
-    ```  
+- constant 常量命名:
+```python 
+ACCOUNT = 'qiyue'    
+PASSWORD = '123456'
+```  
+
+- 变量/函数 命名: 一律小写，如果多个单词，用下划线隔开
+```python 
+# 传递列表
+def greets_user(names):
+    """向列表中的每位用户都发出简单的问候"""
+    for name in names:
+        msg = "Hello(你好), " + name.title() + "!"
+        print(msg)
+
+def run():
+    user_names = ['hannah', 'ty', 'margot']
+    greets_user(user_names)
+    print(" ")
+
+run()
+```
+    
+- 类命名: 类型使用 <大驼峰命名法>，即手术字母大写，私有类可用一个下划线开头。
+```python 
+# car.py
+class Car:
+     """一次模拟汽车的简单尝试"""
+     def __init__(self, make, model, year):
+         """初始化描述汽车的属性"""
+
+# my_car.py
+```
+    
+- 包文件命名:
+```
+- seven
+    + __init__.py
+    + subseven
+        - __init__.py
+```   
+    
+- 包/模块名的命名:   
