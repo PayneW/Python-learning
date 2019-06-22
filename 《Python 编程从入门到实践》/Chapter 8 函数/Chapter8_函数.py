@@ -35,7 +35,7 @@ def describe_pet(animal_type, pet_name):
     print("My " + animal_type + "'s name is " + pet_name.title() + ".")
 
 
-# describe_pet(animal_type='dog', pet_name='Peter')
+describe_pet(animal_type='dog', pet_name='Peter')
 
 
 # 8.2.3 默认值
@@ -108,13 +108,17 @@ print(" ")
 def greets_user(names):
     """向列表中的每位用户都发出简单的问候"""
     for name in names:
-        msg = "Hello, " + name.title() + "!"
+        msg = "Hello(你好), " + name.title() + "!"
         print(msg)
 
 
-usernames = ['hannah', 'ty', 'margot']
-greets_user(usernames)
-print(" ")
+def run():
+    user_names = ['hannah', 'ty', 'margot']
+    greets_user(user_names)
+    print(" ")
+
+
+run()
 
 
 # 8.4.1 在函数中修改列表
@@ -127,23 +131,25 @@ def print_models(unprinted_designs, completed_models):
         current_design = unprinted_designs.pop()
 
         # 模拟根据设计制作 3D 打印模型的过程
-        print("Printing model: " + current_design)
+        print("Printing model(印刷模型): " + current_design)
         completed_models.append(current_design)
 
 
 def show_completed_models(completed_models):
     """显示打印好的所有模型"""
-    print("\nThe following modes have been printed: ")
+    print("\n下面为打印好的模型: ")
     for completed_model in completed_models:
         print(completed_model)
 
 
-unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
-completed_models = []
+def main():
+    unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
+    completed_models = []
+    print_models(unprinted_designs, completed_models)
+    show_completed_models(completed_models)
 
-print_models(unprinted_designs, completed_models)
-show_completed_models(completed_models)
 
+main()
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -184,10 +190,9 @@ def build_profile(first, last, **user_info):
 user_profile = build_profile(
     'albert',
     'einstein',
-    loacation='princeton',
+    location='princeton',
     field='physics')
-print(' ')
-print(user_profile)
+print('\nuser_profile: ', user_profile)
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
