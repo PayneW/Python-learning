@@ -58,3 +58,43 @@ print(type(set()))
     - 字典 dictionary
         + 定义一个空的字典: {}   
 '''
+
+
+"""
+    add: https://python-guide.gitbooks.io/python-style-guide/content/style-guide/code.html
+"""
+
+
+''' - 列表和字典: 尽量使用 map 和 filter 等内置函数，而不是自己去写循环 '''
+
+
+# 不推荐的写法
+def even_1(numbers):
+    evens = []
+    for number in numbers:
+        if number % 2 == 0:
+            evens. append(number)
+    return evens
+
+
+# 正确的写法
+def even_2(numbers):
+    return filter(lambda x: x % 2 == 0, numbers)
+
+
+def main():
+    numbers = [1, 2, 5, 4, 7, 9, 0, 3]
+    print('even_1(numbers): ', even_1(numbers))
+    results = even_2(numbers)
+    for result in results:
+        print(
+
+            'result: ', result)
+
+
+# 尽量不要直接将代写在载模块的顶层中，在执行主程序前应该总是检查 `if __name__ == '__main__'`
+# ，这样当模块被导入时逐层徐就不会被执行。
+if __name__ == '__main__':
+    main()
+
+

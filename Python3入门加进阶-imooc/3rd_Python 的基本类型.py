@@ -180,3 +180,14 @@ print("two_str[-3:]:", two_str[-3:])
 print("Over:", "~" * 60)
 
 
+"""
+    add: https://python-guide.gitbooks.io/python-style-guide/content/style-guide/code.html
+"""
+
+''' - 字符串: 尽量不要用 `+` 号拼接字符串，使用 `%s` 模板或 `join()` 方法拼接。 '''
+
+# 正确写法，使用 join
+print(' '.join(["Spam", "eggs", "and", "spam"]))
+
+# 正确写法
+print('%s %s %s %s' % ('Spam', 'eggs', 'and', 'spam'))
