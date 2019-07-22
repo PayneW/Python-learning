@@ -25,7 +25,7 @@
 
 # 8.6.2 导入特定的函数 (只导入需要的函数)
 '''
-    通过用都好分割函数名，可根据需要从模块中导入任意数量的函数:
+    通过用逗号分割函数名，可根据需要从模块中导入任意数量的函数:
     from module_name import function_0, function_1, function_2, ....
 '''
 from pizza import make_pizza
