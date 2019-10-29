@@ -1,4 +1,4 @@
-# Python 列表   Created in 20190522
+# Python 列表 
 
 # (1, 2, 3, 4, 5, 7)
 print((1, 2, 3) + (4, 5, 7))
